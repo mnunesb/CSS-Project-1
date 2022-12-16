@@ -13,31 +13,36 @@ p, a, button{
 nav img{
   height: 50px;
 }
-/* Intro Text */
-.intro-text{
-    margin: 70px 0px;
+/* Above the fold */
+.above-folder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-/* Product Gallery */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .text{
-    background-color: beige;
+
+.text-container-folder {
+  margin: 0 20px;
 }
-  .gallery-item {
-    width: 30%;
-    text-align: center;
-    border: 0.5px solid gray;
-    margin: 15px;
+
+.above-folder img {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .gallery-item img {
-    width: 100%;
+
+  img {
+    width: 80%;
+    margin-bottom: 20px;
   }
-  
+}
+
   /* Banner */
   .banner {
     width: 100vw;
@@ -70,19 +75,7 @@ nav img{
     margin-bottom: 40px;
   }
 
-  /* Article */
-  article{
-    margin: 40px 50px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  article h2 {
-    text-align: center;
-  }
-  
-  section{
-    margin: 50px 0px;
-  }
+
 
   /* Footer */
   footer{
