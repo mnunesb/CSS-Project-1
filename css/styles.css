@@ -1,0 +1,32 @@
+/* Product Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .text{
+    background-color: beige;
+}
+  .gallery-item {
+    width: 30%;
+    text-align: center;
+    border: 0.5px solid gray;
+    margin: 15px;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .gallery-item{
+    width: 45%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .gallery-item{
+    width: 80%;
+    }
+  }
